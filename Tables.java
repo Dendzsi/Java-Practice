@@ -4,27 +4,27 @@ class Tables {
   Table1 myTable1 = new Table1();
   Table2 myTable2 = new Table2();
   Table3 myTable3 = new Table3();
-  Boolean Quit = false;
+  Boolean quit = false;
     
   
   public void choose(){
     Scanner myScanner = new Scanner(System.in);
-    while(Quit != true){
+    while(quit != true){
     System.out.println("Choose your table!(1 or 2 or 3)");
-    String TableChoice = myScanner.nextLine();
-    if(TableChoice.equals("1")){
+    String tableChoice = myScanner.nextLine();
+    if(tableChoice.equals("1")){
       myTable1.T1method();
     }
-    else if(TableChoice.equals("2")){
+    else if(tableChoice.equals("2")){
       myTable2.T2method();  
     }
-    else if(TableChoice.equals("3")){
+    else if(tableChoice.equals("3")){
       myTable3.T3method();
     }
     System.out.println("Do you want to quit the Program?(Press y for yes or n for no.)");
-    String QuitChoice = myScanner.nextLine();
-    if(QuitChoice.equals("y")){
-      Quit = true;
+    String quitChoice = myScanner.nextLine();
+    if(quitChoice.equals("y")){
+      quit = true;
     }
     }
   }
