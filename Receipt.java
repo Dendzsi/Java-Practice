@@ -81,7 +81,7 @@ public class Receipt {
         }*/
   	System.out.println("Your total will be: "+bill+"$");
 }
-  public void myReceipt(HashMap<String, Integer> hs){
+  public void printReceipt(HashMap<String, Integer> hs){
  
         int i=0;
     	double bill = 0;
