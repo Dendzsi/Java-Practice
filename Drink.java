@@ -32,7 +32,7 @@ class Drink {
       return myCola.Price;
       }
       if(name == "Water"){
-      return myCola.Price;
+      return myWater.Price;
       }
       return 0;
     }
