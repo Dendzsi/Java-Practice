@@ -2,7 +2,7 @@
 class Food {
   Gyros myGyros = new Gyros();
   Pizza myPizza = new Pizza();
-  HotDog myHotdDog = new HotDog();
+  HotDog myHotDog = new HotDog();
 
 	  static class Gyros {
         String ID = "FO1";
@@ -45,7 +45,7 @@ class Food {
       return myPizza.Price;
       }
       if(name == "Hot-Dog"){
-      return myPizza.Price;
+      return myHotDog.Price;
       }
       return 0;
     }
