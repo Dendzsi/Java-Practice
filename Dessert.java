@@ -1,37 +1,20 @@
 
 class Dessert {
-  CheeseCake myCheeseCake = new CheeseCake();
-  Brownie myBrownie = new Brownie();
+  	protected String ID;
+    protected String Name;
+    protected double Price;
+    protected String Description;
   
-  static class CheeseCake{
-    String ID = "DE1";
-    String Name = "Cheese Cake";
-    double Price = 6.5;
-    String Description = "Cheese Cake from delecious Mascarpone.";
-    public void display(){
-        System.out.println("#1: "+Name+ " " +"\nPrice: "+Price+"$");
-      	System.out.println(Description);
-        System.out.println();
+  	public Dessert(String ID, String Name, double Price, String Description){
+      this.ID = ID;
+      this.Name = Name;
+      this.Price = Price;
+      this.Description = Description;
     }
-  }
-  static class Brownie{
-    String ID = "DE2";
-    String Name = "Brownie";
-    double Price = 5.5;
-    String Description = "Brownie from the best Lindt chocolate.";
-    public void display(){
-        System.out.println("#2: "+Name+ " " +"\nPrice: "+Price+"$");
-        System.out.println(Description);
-        System.out.println();
-    }
-  }
-  public double getPrice(String name){
-      if(name == "Cheese Cake"){
-      return myCheeseCake.Price;
-      }
-      if(name == "Brownie"){
-      return myBrownie.Price;
-      }
-      return 0;
+  
+  	public void displayNumber(){
+       System.out.println("#"+ID+": "+Name+ " " +"\nPrice: "+Price+"$");
+       System.out.println(Description);
+       System.out.println();
     }
 }
