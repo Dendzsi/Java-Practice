@@ -1,19 +1,19 @@
 
 class Menu{
   //Drinks
-  Drink.Cola myCola = new Drink.Cola();
-  Drink.Water myWater = new Drink.Water();
+  DrinkController.Cola myCola = new DrinkController.Cola();
+  DrinkController.Water myWater = new DrinkController.Water();
   //Drinks
   
   //Foods
-  Food.Gyros myGyros = new Food.Gyros();
-  Food.Pizza myPizza = new Food.Pizza();
-  Food.HotDog myHotDog = new Food.HotDog();
+  FoodController.Gyros myGyros = new FoodController.Gyros();
+  FoodController.Pizza myPizza = new FoodController.Pizza();
+  FoodController.HotDog myHotDog = new FoodController.HotDog();
   //Foods
   
   //Desserts
-  Dessert.CheeseCake myCheeseCake = new Dessert.CheeseCake();
-  Dessert.Brownie myBrownie = new Dessert.Brownie();
+  DessertController.CheeseCake myCheeseCake = new DessertController.CheeseCake();
+  DessertController.Brownie myBrownie = new DessertController.Brownie();
   //Desserts
 	
   
@@ -22,7 +22,7 @@ class Menu{
     System.out.println("| Drink Menu: |");
     System.out.println("---------------");
     System.out.println();
-    myCola.display();
+    myCola.displayNumber();
     myWater.display();
   }
   

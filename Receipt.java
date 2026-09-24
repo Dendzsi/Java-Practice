@@ -8,9 +8,9 @@ public class Receipt {
   double Price;
   public static ArrayList<String> Items = new ArrayList<String>();
   HashMap<String,Integer> hs=new HashMap<String,Integer>();
-  Drink myDrink = new Drink();
-  Dessert myDessert = new Dessert();
-  Food myFood = new Food();
+  DrinkController myDrink = new DrinkController();
+  DessertController myDessert = new DessertController();
+  FoodController myFood = new FoodController();
   
   
   public void displayReceipt(){
